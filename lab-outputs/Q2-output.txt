@@ -1,0 +1,4 @@
+CONTAINER ID   IMAGE                     COMMAND                  CREATED          STATUS          PORTS                                         NAMES
+4c976b83511d   books-api-client:latest   "/entrypoint.sh"         1 second ago     Up 1 second     0.0.0.0:4100->80/tcp, [::]:4100->80/tcp       booksclient
+8e5ce365fc33   books-rest-api:latest     "java -jar /app/app.…"   13 seconds ago   Up 12 seconds   0.0.0.0:8080->8080/tcp, [::]:8080->8080/tcp   booksserver
+f96a3f6bfa45   mysql:9                   "docker-entrypoint.s…"   19 seconds ago   Up 19 seconds   3306/tcp, 33060/tcp                           mysqldb
